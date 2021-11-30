@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": "..",
+        "strict": true,
+        "target": "es5",
+        "jsx": "preserve",
+        "types": ["cypress", "@testing-library/cypress"],
+        "lib": ["dom", "esnext"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "downlevelIteration": true
+    },
+    "include": ["**/*.ts", "**/*.tsx", "plugins/index.js", "support/index.js"]
+}
