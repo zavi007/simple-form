@@ -1,4 +1,3 @@
-// Your tests go in here. Happy coding! 🤓
 describe('Ticket form', () => {
     beforeEach(() => {
       cy.visit('http://localhost:3000/')
@@ -10,7 +9,7 @@ describe('Ticket form', () => {
       it('Successful form submission', () => { 
           cy.intercept('POST', 'https://api.livechatinc.com/v2/tickets/new', (req) => {
               req.reply({
-                statusCode: 200,
+                statusCode: 200
               })
             }).as('submitForm')
             cy.get('form').submit()
